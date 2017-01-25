@@ -47,8 +47,8 @@ export default {
   watch: {
     data (val) {
       this.$nextTick(() => {
-        // this.chart.data.datasets = val.datasets
-        // this.chart.data.labels = val.labels
+        this.chart.data.datasets = val.datasets
+        this.chart.data.labels = val.labels
         this.chart.update()
       })
     }
